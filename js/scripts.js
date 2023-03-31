@@ -23,3 +23,13 @@ function beep(inputNumber, inputName) {
 }
 
 //UI Logic
+window.onload = function () {
+  const form = document.querySelector("form");
+  form.onsubmit = function (event) {
+      event.preventDefault();
+      let input = document.getElementById("input").value;
+      let nameInput = document.getElementById("nameInput").value;
+      let numberArray = beep(input, nameInput);
+      document.getElementById("result").innerText = numberArray.join(" ");
+  }
+}
