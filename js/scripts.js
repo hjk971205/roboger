@@ -1,3 +1,4 @@
+//Business Logic
 function beep(inputNumber, inputName) {
   if (inputNumber < 1) {
       const paragraph = document.createElement("p");
@@ -6,7 +7,9 @@ function beep(inputNumber, inputName) {
   } else {
       let numberArray = [];
       for (let i = 0; i <= inputNumber; i++) {
-          if (i.toString().indexOf("1") !== -1) {
+        if (i.toString().indexOf("2") !== -1) {
+          numberArray.push(" Boop!");  
+        } else if (i.toString().indexOf("1") !== -1) {
               numberArray.push(" Beep!");
           } else {
               numberArray.push(i);
@@ -16,3 +19,5 @@ function beep(inputNumber, inputName) {
       return numberArray;
   }
 }
+
+//UI Logic
