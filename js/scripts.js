@@ -32,4 +32,11 @@ window.onload = function () {
       let numberArray = beep(input, nameInput);
       document.getElementById("result").innerText = numberArray.join(" ");
   }
+  document.getElementById("btn").onclick = function () {
+      let input = document.getElementById("input").value;
+      let nameInput = document.getElementById("nameInput").value;
+      let numberArray = beep(input, nameInput);
+      document.getElementById("result").innerText = numberArray.reverse().join(" ");
+  }
+
 }
