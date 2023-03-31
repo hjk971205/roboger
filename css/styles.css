@@ -1,0 +1,25 @@
+body {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: aliceblue;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: url("https://i.ytimg.com/vi/DoPKn-EBWl8/maxresdefault.jpg");
+}
+
+h2 {
+  background-color: aliceblue;
+  color: black;
+}
+
+div {
+  background-color: aliceblue;
+  color: black;
+}
