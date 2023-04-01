@@ -26,17 +26,17 @@ function beep(inputNumber, inputName) {
 window.onload = function () {
   const form = document.querySelector("form");
   form.onsubmit = function (event) {
-      event.preventDefault();
-      let input = document.getElementById("input").value;
-      let nameInput = document.getElementById("nameInput").value;
-      let numberArray = beep(input, nameInput);
-      document.getElementById("result").innerText = numberArray.join(" ");
+    event.preventDefault();
+    let input = document.getElementById("input").value;
+    let nameInput = document.getElementById("nameInput").value;
+    let numberArray = beep(input, nameInput);
+    document.getElementById("result").innerText = numberArray.join(" ");
   }
   document.getElementById("btn").onclick = function () {
-      let input = document.getElementById("input").value;
-      let nameInput = document.getElementById("nameInput").value;
-      let numberArray = beep(input, nameInput);
-      document.getElementById("result").innerText = numberArray.reverse().join(" ");
+    let input = document.getElementById("input").value;
+    let nameInput = document.getElementById("nameInput").value;
+    let numberArray = beep(input, nameInput);
+    document.getElementById("result").innerText = numberArray.reverse().join(" ");
   }
 
 }
